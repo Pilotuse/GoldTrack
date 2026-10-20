@@ -42,6 +42,14 @@
         {
           "faceIDPermission": "用于人脸识别解锁"
         }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
+        }
       ]
     ],
     "experiments": {
