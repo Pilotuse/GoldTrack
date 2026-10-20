@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.hyuocs.myapp",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "用于人脸识别解锁"
+      }
+    },
+    "android": {
+      "package": "com.hyuocs.myapp"
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "用于设置头像",
+          "cameraPermission": "用于拍摄头像"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "用于人脸识别解锁"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
